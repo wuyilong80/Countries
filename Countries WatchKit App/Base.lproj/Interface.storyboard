@@ -1,15 +1,74 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Countries_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="mG7-yt-xgt">
+                            <items>
+                                <tableRow identifier="CountryRow" id="OKd-03-RLG" customClass="CountryRow" customModule="Countries_WatchKit_App_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="2Oz-z3-iLI">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Counry Name" textAlignment="center" id="ret-zb-G2h">
+                                                <fontDescription key="font" type="system" pointSize="20"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="countryName" destination="ret-zb-G2h" id="lPQ-Mm-W9d"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="mG7-yt-xgt" id="dnp-VR-lJk"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-16" y="-40"/>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="xaG-SJ-rJ2">
+            <objects>
+                <controller identifier="DetailInterfaceController" id="CPg-wi-CdW" customClass="DetailInterfaceController" customModule="Countries_WatchKit_App_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Country Name" textAlignment="center" id="1xO-SF-OtB">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="20"/>
+                        </label>
+                        <imageView alignment="center" verticalAlignment="center" image="us" id="1sQ-v2-gqC"/>
+                        <label alignment="center" verticalAlignment="center" text="Capital" textAlignment="center" id="v1a-qa-SNw">
+                            <fontDescription key="font" type="boldSystem" pointSize="20"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="The Capital" textAlignment="center" id="eLv-Gt-tuF">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="Currency" textAlignment="center" id="E80-8A-GFI">
+                            <fontDescription key="font" type="boldSystem" pointSize="20"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="The Currency" textAlignment="center" id="vyr-HK-fCt">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="capital" destination="eLv-Gt-tuF" id="F1E-Pd-UeN"/>
+                        <outlet property="countryName" destination="1xO-SF-OtB" id="tY2-Za-szz"/>
+                        <outlet property="currency" destination="vyr-HK-fCt" id="PeJ-4C-z9V"/>
+                        <outlet property="flag" destination="1sQ-v2-gqC" id="wjE-ji-Bgs"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="373" y="-40"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="us" width="550" height="289"/>
+    </resources>
 </document>

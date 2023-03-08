@@ -20,6 +20,8 @@
 		21A44AEB29B8515D00DEACB4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A44AEA29B8515D00DEACB4 /* ComplicationController.swift */; };
 		21A44AED29B8516000DEACB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A44AEC29B8516000DEACB4 /* Assets.xcassets */; };
 		21A44AF129B8516000DEACB4 /* Countries WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21A44AD629B8515900DEACB4 /* Countries WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		21B27ACF29B867B700BF3995 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27ACE29B867B700BF3995 /* DetailInterfaceController.swift */; };
+		21B27AD129B8689300BF3995 /* CountryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27AD029B8689300BF3995 /* CountryRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		21A44AEA29B8515D00DEACB4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		21A44AEC29B8516000DEACB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21A44AEE29B8516000DEACB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B27ACE29B867B700BF3995 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		21B27AD029B8689300BF3995 /* CountryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 				21A44AEA29B8515D00DEACB4 /* ComplicationController.swift */,
 				21A44AEC29B8516000DEACB4 /* Assets.xcassets */,
 				21A44AEE29B8516000DEACB4 /* Info.plist */,
+				21B27ACE29B867B700BF3995 /* DetailInterfaceController.swift */,
+				21B27AD029B8689300BF3995 /* CountryRow.swift */,
 			);
 			path = "Countries WatchKit App WatchKit Extension";
 			sourceTree = "<group>";
@@ -297,7 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A44AE929B8515D00DEACB4 /* ExtensionDelegate.swift in Sources */,
+				21B27AD129B8689300BF3995 /* CountryRow.swift in Sources */,
 				21A44AE729B8515D00DEACB4 /* InterfaceController.swift in Sources */,
+				21B27ACF29B867B700BF3995 /* DetailInterfaceController.swift in Sources */,
 				21A44AEB29B8515D00DEACB4 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
